@@ -144,6 +144,7 @@
     backface-visibility: hidden;
     font-size: 20px;
     font-weight: bold;
+
 }
 
 .frontal {
@@ -280,6 +281,7 @@
     bottom: 20px;
     left: 20px;
     z-index: 100;
+    pointer-events: none; 
 }
 
 
@@ -288,6 +290,7 @@
     /* Ajusta el tamaño de la imagen */
     height: 100px;
     border: none;
+    pointer-events: auto;
 }
 
 /* Fondo oscuro al abrir la ventana emergente */
@@ -310,16 +313,17 @@
     /* Esto desactiva los clics sobre el fondo */
 }
 
+
 /* Contenedor de la ventana emergente */
 #ventanaInfo .ventana-contenido {
     background: #fff;
     gap: 20px;
     width: 600px;
-    height: 400px;
+    height: 450px;
     min-width: 600px !important;
-    min-height: 400px !important;
+    min-height: 450px !important;
     max-width: 600px !important;
-    max-height: 400px !important;
+    max-height: 450px !important;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -354,7 +358,7 @@
     border: 4px solid #333;
     cursor: pointer;
     font-size: 18px;
-    margin-top: 190px;
+    margin-top: 50px;
     align-self: center;
 }
 
@@ -378,5 +382,16 @@
 #imagenCreador {
     display: block;
     width: 200px;
+    height: auto;
+}
+
+#github {
+    position: absolute;
+    bottom: 75px; 
+      
+}
+
+#github img {
+    width: 65px;
     height: auto;
 }
