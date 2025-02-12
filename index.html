@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carmen Montalvo Luque">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <title>Minijuegos</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div>
+            <h1>FROGGET ABOUT IT</h1>
+        </div>
+    </header>
+
+    <div id="controles">
+        <label for="size">Tamaño de la cuadrícula:</label>
+        <select id="size">
+            <option value="4">4x4</option>
+            <option value="6">6x6</option>
+        </select>
+        <p id="contadorMovimientos">Movimientos: 0</p>
+        <p id="contadorTiempo">Tiempo: 0s</p>
+        <button id="botonPausa">Pausar</button>
+        <p id="mensajeVictoria"></p>
+        <button id="botonReiniciar" style="display: none;">Reiniciar Juego</button>
+    </div>
+    <div id="contenedor">
+        <div id="juego"></div>
+
+    </div>
+
+    <!-- Enlace al artista -->
+    <a href="https://www.instagram.com/dinghuart?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        class="imagen-enlace" target="_blank" title="Visita al artista">
+        <img src="./assets/img/icon.png" alt="Visitar al artista">
+    </a>
+
+    <!-- Información mia -->
+    <a href="#" class="imagen-enlace" id="abrirInfo" title="Conoce al programador">
+        <img src="./assets/img/creator.png" alt="Abrir ventana">
+    </a>
+
+    <div id="ventanaInfo" class="ventana-emergente" style="display: none;">
+        <div class="ventana-contenido">
+            <img src="./assets/img/creator.png" alt="Creador" id="imagenCreador">
+            <p id="mensajeInfo"><span style="font-size: 24px; font-weight: bold;">¡Hola!</span><br><br>Soy Carmen y este
+                es un proyecto que he hecho para clase de Desarrollo Web.
+                <br>Asegúrate de visitar al artista que ha hecho las ilustraciones de las cartas.<br>¡Gracias por jugar!
+            </p>
+            
+            <button id="cerrarInfo">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="ventanaVictoria" class="ventana-emergente" style="display: none;">
+        <div class="ventana-contenido">
+            <p id="mensajeVictoriaTexto">¡Has ganado!</p>
+            <p id="resumenVictoria"></p>
+            <button id="cerrarVentana">Aceptar</button>
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/script.js"></script>
+</body>
+
+</html>
